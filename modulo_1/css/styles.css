@@ -1,6 +1,6 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(155deg, #e96700, #ed5c74);
+  background: linear-gradient(135deg, #d84315, #ff6f00);
   margin: 0;
   padding: 0;
   color: #333;
@@ -17,6 +17,13 @@ header {
 header h1 {
   margin: 0 0 0.5rem 0;
   font-size: 2rem;
+}
+
+header h2 {
+  margin: 0.3rem 0;
+  font-size: 1.3rem;
+  opacity: 0.95;
+  font-weight: 600;
 }
 
 header p {
@@ -70,7 +77,7 @@ header .subtitle {
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.2rem;
-  color: #2a5298;
+  color: #ff6f00;
   pointer-events: none;
 }
 
@@ -105,7 +112,7 @@ header .subtitle {
 
 .search-result-item:hover,
 .search-result-item.active {
-  background-color: #f8f9ff;
+  background-color: #fff3e0;
 }
 
 .search-result-header {
@@ -117,8 +124,8 @@ header .subtitle {
 
 .search-result-number {
   display: inline-block;
-  background: #e8eeff;
-  color: #e96700;
+  background: #ffe0b2;
+  color: #e65100;
   padding: 0.15rem 0.5rem;
   border-radius: 10px;
   font-size: 0.75rem;
@@ -155,11 +162,11 @@ header .subtitle {
 .search-more-results {
   padding: 0.8rem 1.2rem;
   text-align: center;
-  color: #e96700;
+  color: #ff6f00;
   font-size: 0.85rem;
   font-weight: 600;
-  background: #f8f9ff;
-  border-top: 1px solid #e8eeff;
+  background: #fff3e0;
+  border-top: 1px solid #ffe0b2;
 }
 
 /* Navegación */
@@ -185,7 +192,7 @@ header .subtitle {
 }
 
 .nav-bar a.home-link {
-  background-color: #2a5298;
+  background-color: #ff6f00;
   font-weight: bold;
 }
 
@@ -221,7 +228,7 @@ header .subtitle {
 }
 
 .category-card h2 {
-  color: #2a5298;
+  color: #ff6f00;
   font-size: 1.4rem;
   margin: 0.5rem 0;
 }
@@ -235,7 +242,7 @@ header .subtitle {
 
 .term-count {
   display: inline-block;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(135deg, #d84315, #ff6f00);
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
@@ -248,7 +255,7 @@ header .subtitle {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
-  background-color: #2a5298;
+  background-color: #ff6f00;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -257,7 +264,7 @@ header .subtitle {
 }
 
 .category-link:hover {
-  background-color: #1e3c72;
+  background-color: #d84315;
 }
 
 /* Tarjetas de términos (páginas internas) */
@@ -276,17 +283,17 @@ header .subtitle {
 
 .card h3 {
   margin-top: 0;
-  color: #e96700;
+  color: #ff6f00;
   font-size: 1.3rem;
-  border-bottom: 2px solid #2a5298;
+  border-bottom: 2px solid #ff6f00;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .card .term-number {
   display: inline-block;
-  background: #f0f0f0;
-  color: #2a5298;
+  background: #ffe0b2;
+  color: #e65100;
   padding: 0.2rem 0.6rem;
   border-radius: 5px;
   font-size: 0.8rem;
@@ -304,7 +311,7 @@ header .subtitle {
   display: inline-block;
   margin-top: 1rem;
   text-decoration: none;
-  background-color: #e96700;
+  background-color: #ff6f00;
   color: white;
   padding: 0.6rem 1rem;
   border-radius: 8px;
@@ -314,7 +321,7 @@ header .subtitle {
 }
 
 .card a:hover {
-  background-color: #1e3c72;
+  background-color: #d84315;
 }
 
 /* Highlight para término seleccionado desde búsqueda */
@@ -325,15 +332,15 @@ header .subtitle {
 
 @keyframes highlight {
   0% {
-    box-shadow: 0 0 0 0 rgba(42, 82, 152, 0.7);
+    box-shadow: 0 0 0 0 rgba(255, 111, 0, 0.7);
     transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 0 15px rgba(42, 82, 152, 0);
+    box-shadow: 0 0 0 15px rgba(255, 111, 0, 0);
     transform: scale(1.02);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(42, 82, 152, 0);
+    box-shadow: 0 0 0 0 rgba(255, 111, 0, 0);
     transform: scale(1);
   }
 }
@@ -349,7 +356,7 @@ header .subtitle {
 }
 
 .page-info h2 {
-  color: #2a5298;
+  color: #ff6f00;
   margin-top: 0;
   display: flex;
   align-items: center;
@@ -378,6 +385,10 @@ footer p {
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.5rem;
+  }
+  
+  header h2 {
+    font-size: 1.1rem;
   }
   
   .search-container {
