@@ -1,6 +1,6 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(155deg, #e96700, #ed5c74);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background: linear-gradient(75deg, #e96700, #ed5c74);
   margin: 0;
   padding: 0;
   color: #333;
@@ -182,13 +182,13 @@ header .subtitle {
   text-decoration: none;
   padding: 0.5rem 1rem;
   margin: 0 0.3rem;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-radius: 15px;
+  transition: background-color 0.s;
   display: inline-block;
 }
 
 .nav-bar a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(232, 220, 220, 0.1);
 }
 
 .nav-bar a.home-link {
