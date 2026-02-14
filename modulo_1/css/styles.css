@@ -242,7 +242,7 @@ header .subtitle {
 
 .term-count {
   display: inline-block;
-  background: linear-gradient(155deg, #e96700, #ed5c74);
+  background: #430de5;
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
