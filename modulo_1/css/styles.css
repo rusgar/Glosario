@@ -242,7 +242,7 @@ header .subtitle {
 
 .term-count {
   display: inline-block;
-  background: linear-gradient(75deg, #e96700, #ea536c);
+  background: #390ff0;
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
@@ -293,7 +293,7 @@ header .subtitle {
 .card .term-number {
   display: inline-block;
   background: #fce4d6;
-  color: #ed5c74;
+  color: #390ff0;
   padding: 0.2rem 0.6rem;
   border-radius: 5px;
   font-size: 0.8rem;
