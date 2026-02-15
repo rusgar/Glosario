@@ -106,9 +106,25 @@ function escapeRegex(string) {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Navegar a término
+// Navegar a término - CORREGIDO para evitar duplicación de rutas
 function goToTerm(page, termNumber) {
-    window.location.href = `${page}#term-${termNumber}`;
+    // Detectar si estamos en una página interna (dentro de modulo_1)
+    const currentPath = window.location.pathname;
+    const isInModulo = currentPath.includes('/modulo_1/');
+    
+    let targetUrl;
+    
+    if (isInModulo) {
+        // Estamos en modulo_1, usar ruta relativa (solo el nombre del archivo)
+        // page viene como "modulo_1/conceptos.html", extraer solo "conceptos.html"
+        const fileName = page.split('/').pop();
+        targetUrl = `${fileName}#term-${termNumber}`;
+    } else {
+        // Estamos en la raíz (index.html), usar ruta absoluta completa
+        targetUrl = `/${page}#term-${termNumber}`;
+    }
+    
+    window.location.href = targetUrl;
 }
 
 // Cerrar resultados
