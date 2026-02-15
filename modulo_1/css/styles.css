@@ -1,6 +1,6 @@
 body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
-  background: linear-gradient(75deg, #e96700, #ed5c74);
+  background: linear-gradient(75deg, #e96700, #ea536c);
   margin: 0;
   padding: 0;
   color: #333;
@@ -183,16 +183,16 @@ header .subtitle {
   padding: 0.5rem 1rem;
   margin: 0 0.3rem;
   border-radius: 15px;
-  transition: background-color 0.s;
+  transition: background-color 0.3s;
   display: inline-block;
 }
 
 .nav-bar a:hover {
-  background-color: rgba(232, 220, 220, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-bar a.home-link {
-  background-color: #430de5;
+  background-color: #e96700;
   font-weight: bold;
 }
 
@@ -228,8 +228,8 @@ header .subtitle {
 }
 
 .category-card h2 {
-  color: #ed5c74;
-  font-size: 1.4rem;
+  color: black;
+  font-size: 1.3rem;
   margin: 0.5rem 0;
 }
 
@@ -242,7 +242,7 @@ header .subtitle {
 
 .term-count {
   display: inline-block;
-  background: #430de5;
+  background: linear-gradient(75deg, #e96700, #ea536c);
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
@@ -283,9 +283,9 @@ header .subtitle {
 
 .card h3 {
   margin-top: 0;
-  color: #430de5;
+  color: black;
   font-size: 1.3rem;
-  border-bottom: 2px solid #430de5;
+  border-bottom: 2px solid #ed5c74;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -358,6 +358,7 @@ header .subtitle {
 .page-info h2 {
   color: #ed5c74;
   margin-top: 0;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -366,6 +367,52 @@ header .subtitle {
 .page-info p {
   color: #555;
   margin: 0.5rem 0;
+}
+
+/* Lista de términos */
+.terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  column-count: 3;
+  column-gap: 2rem;
+}
+
+.terms-list li {
+  background: #fff;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  border-left: 3px solid #e96700;
+  transition: all 0.2s ease;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.terms-list li:hover {
+  background: #fff3e0;
+  transform: translateX(3px);
+  box-shadow: 0 2px 6px rgba(233, 103, 0, 0.15);
+}
+
+.terms-list li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: block;
+}
+
+.terms-list li:hover a {
+  color: #e96700;
+}
+
+/* Tablet - 2 columnas */
+@media (max-width: 1024px) {
+  .terms-list {
+    column-count: 2;
+    column-gap: 1.5rem;
+  }
 }
 
 /* Footer */
@@ -412,6 +459,10 @@ footer a:hover {
   .search-icon {
     left: 0.8rem;
     font-size: 1rem;
+  }
+  
+  .terms-list {
+    column-count: 1;
   }
   
   .container {
